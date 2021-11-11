@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>OMDb API</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/index.css" />
+  </head>
+  <body>
+    <div class="container text-center">
+      <form class="form-inline" id="search-form">
+        <!-- <input
+          type="text"
+          class="form-control"
+          placeholder="Find movie"
+          id="search-input"
+        /> -->
+        <select id="search-input" name="movie" class="js-example-basic-single">
+          <option value="harry potter">Harry Potter</option>
+          <option value="TMNT">TNMT</option>
+          <option value="Lord of the rings">Lord of the rings</option>
+          <option value="The fast and the furious">
+            The fast and the furious
+          </option>
+        </select>
+        <input type="submit" class="btn btn-primary" />
+      </form>
+      <ul id="results" class="list-inline"></ul>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
